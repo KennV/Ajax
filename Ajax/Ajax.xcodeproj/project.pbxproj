@@ -104,15 +104,13 @@
 		38E425E01FF2FB54009AD50E /* Ajax */ = {
 			isa = PBXGroup;
 			children = (
-				38E425E11FF2FB54009AD50E /* AppDelegate.h */,
-				38E425E21FF2FB54009AD50E /* AppDelegate.m */,
 				38E425E41FF2FB54009AD50E /* MasterViewController.h */,
 				38E425E51FF2FB54009AD50E /* MasterViewController.m */,
 				38E425E71FF2FB54009AD50E /* DetailViewController.h */,
 				38E425E81FF2FB54009AD50E /* DetailViewController.m */,
 				38E426161FF2FBD9009AD50E /* GUI */,
+				38E426171FF2FD12009AD50E /* ApplicationSupport */,
 				38E425F21FF2FB54009AD50E /* Info.plist */,
-				38E425F31FF2FB54009AD50E /* main.m */,
 			);
 			path = Ajax;
 			sourceTree = "<group>";
@@ -143,6 +141,16 @@
 				38E425EF1FF2FB54009AD50E /* LaunchScreen.storyboard */,
 			);
 			path = GUI;
+			sourceTree = "<group>";
+		};
+		38E426171FF2FD12009AD50E /* ApplicationSupport */ = {
+			isa = PBXGroup;
+			children = (
+				38E425E11FF2FB54009AD50E /* AppDelegate.h */,
+				38E425E21FF2FB54009AD50E /* AppDelegate.m */,
+				38E425F31FF2FB54009AD50E /* main.m */,
+			);
+			path = ApplicationSupport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
