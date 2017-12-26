@@ -104,10 +104,7 @@
 		38E425E01FF2FB54009AD50E /* Ajax */ = {
 			isa = PBXGroup;
 			children = (
-				38E425E41FF2FB54009AD50E /* KDVPrimeTVController.h */,
-				38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */,
-				38E425E71FF2FB54009AD50E /* KDVGraphicsViewController.h */,
-				38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */,
+				38E426181FF2FEB6009AD50E /* ViewControllers */,
 				38E426161FF2FBD9009AD50E /* GUI */,
 				38E426171FF2FD12009AD50E /* ApplicationSupport */,
 				38E425F21FF2FB54009AD50E /* Info.plist */,
@@ -151,6 +148,25 @@
 				38E425F31FF2FB54009AD50E /* main.m */,
 			);
 			path = ApplicationSupport;
+			sourceTree = "<group>";
+		};
+		38E426181FF2FEB6009AD50E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				38E425E41FF2FB54009AD50E /* KDVPrimeTVController.h */,
+				38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */,
+				38E426191FF2FF26009AD50E /* GraphicsViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		38E426191FF2FF26009AD50E /* GraphicsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38E425E71FF2FB54009AD50E /* KDVGraphicsViewController.h */,
+				38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */,
+			);
+			path = GraphicsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
