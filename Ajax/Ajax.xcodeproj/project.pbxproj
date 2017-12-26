@@ -153,8 +153,7 @@
 		38E426181FF2FEB6009AD50E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				38E425E41FF2FB54009AD50E /* KDVPrimeTVController.h */,
-				38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */,
+				38E4261A1FF2FF8C009AD50E /* PrimeTVController */,
 				38E426191FF2FF26009AD50E /* GraphicsViewController */,
 			);
 			path = ViewControllers;
@@ -167,6 +166,15 @@
 				38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */,
 			);
 			path = GraphicsViewController;
+			sourceTree = "<group>";
+		};
+		38E4261A1FF2FF8C009AD50E /* PrimeTVController */ = {
+			isa = PBXGroup;
+			children = (
+				38E425E41FF2FB54009AD50E /* KDVPrimeTVController.h */,
+				38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */,
+			);
+			path = PrimeTVController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
