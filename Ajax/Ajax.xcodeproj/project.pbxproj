@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38E425E31FF2FB54009AD50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E21FF2FB54009AD50E /* AppDelegate.m */; };
-		38E425E61FF2FB54009AD50E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E51FF2FB54009AD50E /* MasterViewController.m */; };
+		38E425E61FF2FB54009AD50E /* KDVPrimeTVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */; };
 		38E425E91FF2FB54009AD50E /* KDVGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */; };
 		38E425EC1FF2FB54009AD50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E425EA1FF2FB54009AD50E /* Main.storyboard */; };
 		38E425EE1FF2FB54009AD50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E425ED1FF2FB54009AD50E /* Assets.xcassets */; };
@@ -39,8 +39,8 @@
 		38E425DE1FF2FB54009AD50E /* Ajax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ajax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E425E11FF2FB54009AD50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38E425E21FF2FB54009AD50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		38E425E41FF2FB54009AD50E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		38E425E51FF2FB54009AD50E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		38E425E41FF2FB54009AD50E /* KDVPrimeTVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVPrimeTVController.h; sourceTree = "<group>"; };
+		38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVPrimeTVController.m; sourceTree = "<group>"; };
 		38E425E71FF2FB54009AD50E /* KDVGraphicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVGraphicsViewController.h; sourceTree = "<group>"; };
 		38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVGraphicsViewController.m; sourceTree = "<group>"; };
 		38E425EB1FF2FB54009AD50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		38E425E01FF2FB54009AD50E /* Ajax */ = {
 			isa = PBXGroup;
 			children = (
-				38E425E41FF2FB54009AD50E /* MasterViewController.h */,
-				38E425E51FF2FB54009AD50E /* MasterViewController.m */,
+				38E425E41FF2FB54009AD50E /* KDVPrimeTVController.h */,
+				38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */,
 				38E425E71FF2FB54009AD50E /* KDVGraphicsViewController.h */,
 				38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */,
 				38E426161FF2FBD9009AD50E /* GUI */,
@@ -287,7 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E425E61FF2FB54009AD50E /* MasterViewController.m in Sources */,
+				38E425E61FF2FB54009AD50E /* KDVPrimeTVController.m in Sources */,
 				38E425E31FF2FB54009AD50E /* AppDelegate.m in Sources */,
 				38E425F41FF2FB54009AD50E /* main.m in Sources */,
 				38E425E91FF2FB54009AD50E /* KDVGraphicsViewController.m in Sources */,

@@ -10,7 +10,7 @@
 
 @class KDVGraphicsViewController;
 
-@interface MasterViewController : UITableViewController
+@interface KDVPrimeTVController : UITableViewController
 
 @property (strong, nonatomic) KDVGraphicsViewController *detailViewController;
 

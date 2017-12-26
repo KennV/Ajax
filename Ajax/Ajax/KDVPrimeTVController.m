@@ -6,15 +6,15 @@
 //  Copyright © 2017 Kenn Villegas. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "KDVPrimeTVController.h"
 #import "KDVGraphicsViewController.h"
 
-@interface MasterViewController ()
+@interface KDVPrimeTVController ()
 
 @property NSMutableArray *objects;
 @end
 
-@implementation MasterViewController
+@implementation KDVPrimeTVController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
