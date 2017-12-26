@@ -6,13 +6,13 @@
 //  Copyright © 2017 Kenn Villegas. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "KDVGraphicsViewController.h"
 
-@interface DetailViewController ()
+@interface KDVGraphicsViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation KDVGraphicsViewController
 
 - (void)configureView {
   // Update the user interface for the detail item.

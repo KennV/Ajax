@@ -7,7 +7,7 @@
 //
 
 #import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "KDVGraphicsViewController.h"
 
 @interface MasterViewController ()
 
@@ -23,7 +23,7 @@
 
   UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
   self.navigationItem.rightBarButtonItem = addButton;
-  self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+  self.detailViewController = (KDVGraphicsViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 
@@ -55,7 +55,7 @@
   if ([[segue identifier] isEqualToString:@"showDetail"]) {
       NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
       NSDate *object = self.objects[indexPath.row];
-      DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+      KDVGraphicsViewController *controller = (KDVGraphicsViewController *)[[segue destinationViewController] topViewController];
       [controller setDetailItem:object];
       controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
       controller.navigationItem.leftItemsSupplementBackButton = YES;
