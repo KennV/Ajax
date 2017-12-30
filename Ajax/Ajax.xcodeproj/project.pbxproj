@@ -37,7 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVAbstractDataController.m; sourceTree = "<group>"; };
+		3801E5B21FF832CD00646B0F /* KDVAbstractDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVAbstractDataController.h; sourceTree = "<group>"; };
+		3801E5B41FF832CD00646B0F /* KDVApplicationDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVApplicationDataController.h; sourceTree = "<group>"; };
+		3801E5B51FF832CD00646B0F /* KDVApplicationDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVApplicationDataController.m; sourceTree = "<group>"; };
 		380663EC1FF330450058AE61 /* KDVAbstractDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVAbstractDataTests.m; sourceTree = "<group>"; };
+		385C4C761FF4815500028BFD /* Ajax.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ajax.xcdatamodel; sourceTree = "<group>"; };
 		38E425DE1FF2FB54009AD50E /* Ajax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ajax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E425E11FF2FB54009AD50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38E425E21FF2FB54009AD50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,12 +88,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3801E5A91FF8310800646B0F /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5B01FF832CD00646B0F /* Abstract */,
+				3801E5B31FF832CD00646B0F /* Application */,
+			);
+			path = DataControllers;
+			sourceTree = "<group>";
+		};
+		3801E5B01FF832CD00646B0F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */,
+				3801E5B21FF832CD00646B0F /* KDVAbstractDataController.h */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		3801E5B31FF832CD00646B0F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5B41FF832CD00646B0F /* KDVApplicationDataController.h */,
+				3801E5B51FF832CD00646B0F /* KDVApplicationDataController.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		380663EB1FF330070058AE61 /* AbstractTests */ = {
 			isa = PBXGroup;
 			children = (
 				380663EC1FF330450058AE61 /* KDVAbstractDataTests.m */,
 			);
 			path = AbstractTests;
+			sourceTree = "<group>";
+		};
+		385C4C741FF4815500028BFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		385C4C781FF4818300028BFD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5A91FF8310800646B0F /* DataControllers */,
+				385C4C741FF4815500028BFD /* Model */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		38E425D51FF2FB53009AD50E = {
@@ -114,6 +163,7 @@
 		38E425E01FF2FB54009AD50E /* Ajax */ = {
 			isa = PBXGroup;
 			children = (
+				385C4C781FF4818300028BFD /* Data */,
 				38E426181FF2FEB6009AD50E /* ViewControllers */,
 				38E426161FF2FBD9009AD50E /* GUI */,
 				38E426171FF2FD12009AD50E /* ApplicationSupport */,
@@ -611,6 +661,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				385C4C761FF4815500028BFD /* Ajax.xcdatamodel */,
+			);
+			currentVersion = 385C4C761FF4815500028BFD /* Ajax.xcdatamodel */;
+			path = Ajax.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 38E425D61FF2FB53009AD50E /* Project object */;
 }
