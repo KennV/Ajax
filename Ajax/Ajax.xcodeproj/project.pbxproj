@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		380663ED1FF330450058AE61 /* KDVAbstractDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 380663EC1FF330450058AE61 /* KDVAbstractDataTests.m */; };
+		3845CBB81FF8351800F12B1D /* KDVApplicationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801E5B51FF832CD00646B0F /* KDVApplicationDataController.m */; };
+		3845CBB91FF8351E00F12B1D /* KDVAbstractDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */; };
+		3845CBBA1FF8354600F12B1D /* Ajax.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */; };
+		3845CBBB1FF835A800F12B1D /* Ajax.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */; };
 		38E425E31FF2FB54009AD50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E21FF2FB54009AD50E /* AppDelegate.m */; };
 		38E425E61FF2FB54009AD50E /* KDVPrimeTVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */; };
 		38E425E91FF2FB54009AD50E /* KDVGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */; };
@@ -100,8 +104,8 @@
 		3801E5B01FF832CD00646B0F /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */,
 				3801E5B21FF832CD00646B0F /* KDVAbstractDataController.h */,
+				3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -375,6 +379,9 @@
 				38E425E61FF2FB54009AD50E /* KDVPrimeTVController.m in Sources */,
 				38E425E31FF2FB54009AD50E /* AppDelegate.m in Sources */,
 				38E425F41FF2FB54009AD50E /* main.m in Sources */,
+				3845CBB91FF8351E00F12B1D /* KDVAbstractDataController.m in Sources */,
+				3845CBBB1FF835A800F12B1D /* Ajax.xcdatamodeld in Sources */,
+				3845CBB81FF8351800F12B1D /* KDVApplicationDataController.m in Sources */,
 				38E425E91FF2FB54009AD50E /* KDVGraphicsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38E425FE1FF2FB54009AD50E /* AjaxTests.m in Sources */,
+				3845CBBA1FF8354600F12B1D /* Ajax.xcdatamodeld in Sources */,
 				380663ED1FF330450058AE61 /* KDVAbstractDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,6 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ75G5YK98;
 				INFOPLIST_FILE = Ajax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k3nv.Ajax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -556,6 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ75G5YK98;
 				INFOPLIST_FILE = Ajax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k3nv.Ajax;
 				PRODUCT_NAME = "$(TARGET_NAME)";

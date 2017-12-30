@@ -24,34 +24,66 @@ It is hella granular at this state
 SO as much as I can dislike the term 'Asymtotic' as a constuct I can reach an Asymtotically high level of coverage on the above terms. And then 100% asymtotic coverage on derived classes
 Now as more LOCs get written the coverage rate grows
 */
-
+/*
+Hmm, to test the Abstract controller I don't need anything hella special but to test the Application data I need to know the difference between NSManagedObjed and KDVAbstractEntity, and also ApplicationEntity - Both of these are intended to be empty
+*/
 #import <XCTest/XCTest.h>
+#import "KDVAbstractDataController.h"
 
 @interface KDVAbstractDataTests : XCTestCase
-
+@property (nonatomic, strong)KDVAbstractDataController *SUT;
+@property(strong,nonatomic)NSPersistentStoreCoordinator *jivePSK;
 @end
 
 @implementation KDVAbstractDataTests
+@synthesize SUT = _SUT;
+@synthesize jivePSK = _jivePSK;
 
+- (void)setupInMemPSK
+{
+  //https://stackoverflow.com/questions/43625748/unit-testing-with-core-data-in-objective-c
+  //xcdatamodel
+  NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Ajax" withExtension:@"momd"];
+  //  NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Anubis" withExtension:@"xcdatamodel"];
+  NSManagedObjectModel *_mom = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+  NSPersistentStoreCoordinator *_psk = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_mom];
+  XCTAssertTrue([_psk addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:NULL] ? YES : NO, @"Should be able to add in-memory store");
+  
+  NSManagedObjectContext *_ctx = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+  _ctx.persistentStoreCoordinator = _psk;
+  [self setJivePSK:(_psk)];
+}
 - (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  [super setUp];
+  [self setupInMemPSK];
+  [self setSUT:[[KDVAbstractDataController alloc]init]];
+//  [[self SUT]setMOC:self.jivePSK.v]
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+  [self setSUT:nil];
+  [self setJivePSK:nil];
+  [super tearDown];
 }
 
-- (void)testExample {
-//  XCTAssertNotNil(nil);
+- (void)testADC {
+  XCTAssert([[self SUT]isMemberOfClass:[KDVAbstractDataController class]]);
+  XCTAssert([[[self SUT]applicationName]isEqualToString:@"Ajax"]);
+  XCTAssert([[[self SUT]databaseName]isEqualToString:@"Ajax.sqlite"]);
+  
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+
+- (void)testOne {
+  XCTAssertNotNil([self SUT]);
+  XCTAssertNotNil([self jivePSK]);
 }
+
+//- (void)testPerformanceExample {
+//    // This is an example of a performance test case.
+//    [self measureBlock:^{
+//        // Put the code you want to measure the time of here.
+//    }];
+//}
 
 @end
