@@ -9,9 +9,6 @@
 #import <CoreData/CoreData.h>
 #import <Foundation/Foundation.h>
 #import "Ajax+CoreDataModel.h"
-//wow lots of these'ns
-//#import "KDVAbstractEntity+CoreDataClass.h"
-
 
 /**
 OKrazy I need this to be in test from the get-go

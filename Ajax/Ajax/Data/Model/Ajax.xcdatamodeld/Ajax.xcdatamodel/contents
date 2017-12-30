@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="KDVAbstractEntity" representedClassName="KDVAbstractEntity" syncable="YES" codeGenerationType="class">
         <attribute name="incepDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="graphics" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVGraphicsEntity" inverseName="owner" inverseEntity="KDVGraphicsEntity" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVLocationEntity" inverseName="newRelationship" inverseEntity="KDVLocationEntity" syncable="YES"/>
+    </entity>
+    <entity name="KDVGraphicsEntity" representedClassName="KDVGraphicsEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVAbstractEntity" inverseName="graphics" inverseEntity="KDVAbstractEntity" syncable="YES"/>
+    </entity>
+    <entity name="KDVLocationEntity" representedClassName="KDVLocationEntity" syncable="YES" codeGenerationType="class">
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVAbstractEntity" inverseName="location" inverseEntity="KDVAbstractEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="KDVAbstractEntity" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="KDVAbstractEntity" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="KDVGraphicsEntity" positionX="-270" positionY="0" width="128" height="58"/>
+        <element name="KDVLocationEntity" positionX="-281" positionY="77" width="128" height="58"/>
     </elements>
 </model>
