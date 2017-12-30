@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="KDVAbstractEntity" representedClassName="KDVAbstractEntity" syncable="YES" codeGenerationType="class">
         <attribute name="incepDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="unique" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="graphics" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVGraphicsEntity" inverseName="owner" inverseEntity="KDVGraphicsEntity" syncable="YES"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVLocationEntity" inverseName="owner" inverseEntity="KDVLocationEntity" syncable="YES"/>
         <relationship name="physics" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVPhysicsEntity" inverseName="owner" inverseEntity="KDVPhysicsEntity" syncable="YES"/>
@@ -14,22 +15,25 @@
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVAbstractEntity" inverseName="graphics" inverseEntity="KDVAbstractEntity" syncable="YES"/>
     </entity>
     <entity name="KDVLocationEntity" representedClassName="KDVLocationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="xLong" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="xPos" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="yPos" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="yWide" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="zPos" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="zTall" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVAbstractEntity" inverseName="location" inverseEntity="KDVAbstractEntity" syncable="YES"/>
     </entity>
     <entity name="KDVPhysicsEntity" representedClassName="KDVPhysicsEntity" syncable="YES" codeGenerationType="class">
         <attribute name="massKG" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="xLong" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="yWide" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="zTall" attributeType="Float" minValueString="0" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="xDeltaVee" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="yDeltaVee" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="zDeltaVee" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KDVAbstractEntity" inverseName="physics" inverseEntity="KDVAbstractEntity" syncable="YES"/>
     </entity>
     <elements>
-        <element name="KDVAbstractEntity" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="KDVGraphicsEntity" positionX="-270" positionY="0" width="128" height="118"/>
-        <element name="KDVLocationEntity" positionX="-281" positionY="77" width="128" height="103"/>
-        <element name="KDVPhysicsEntity" positionX="-270" positionY="243" width="128" height="118"/>
+        <element name="KDVAbstractEntity" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="KDVGraphicsEntity" positionX="-297" positionY="-90" width="128" height="118"/>
+        <element name="KDVLocationEntity" positionX="-297" positionY="72" width="128" height="148"/>
+        <element name="KDVPhysicsEntity" positionX="-297" positionY="251" width="128" height="118"/>
     </elements>
 </model>
