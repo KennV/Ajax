@@ -14,7 +14,7 @@
 - (instancetype)initAllUp {
   self = [self initWithAppName:@"Ajax"
                   databaseName:@"Ajax.sqlite"
-                     className:@"KDVAjaxEntity"];
+                     className:@"KDVApplicationEntity"];
   if (self) {
     
   }

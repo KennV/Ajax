@@ -7,7 +7,7 @@
 
 */
 #import "KDVAbstractDataController.h"
-
+#import "KDVApplicationEntity+CoreDataClass.h"
 
 @interface KDVApplicationDataController : KDVAbstractDataController <NSFetchedResultsControllerDelegate>
 

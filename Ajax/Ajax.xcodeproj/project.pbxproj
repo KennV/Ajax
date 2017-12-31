@@ -140,8 +140,8 @@
 		385C4C781FF4818300028BFD /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3801E5A91FF8310800646B0F /* DataControllers */,
 				385C4C741FF4815500028BFD /* Model */,
+				3801E5A91FF8310800646B0F /* DataControllers */,
 			);
 			path = Data;
 			sourceTree = "<group>";
