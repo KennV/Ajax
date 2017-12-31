@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380663ED1FF330450058AE61 /* KDVAbstractDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 380663EC1FF330450058AE61 /* KDVAbstractDataTests.m */; };
+		3845CBB81FF8351800F12B1D /* KDVApplicationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801E5B51FF832CD00646B0F /* KDVApplicationDataController.m */; };
+		3845CBB91FF8351E00F12B1D /* KDVAbstractDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */; };
+		3845CBBA1FF8354600F12B1D /* Ajax.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */; };
+		3845CBBB1FF835A800F12B1D /* Ajax.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */; };
 		38E425E31FF2FB54009AD50E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E21FF2FB54009AD50E /* AppDelegate.m */; };
 		38E425E61FF2FB54009AD50E /* KDVPrimeTVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */; };
 		38E425E91FF2FB54009AD50E /* KDVGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425E81FF2FB54009AD50E /* KDVGraphicsViewController.m */; };
@@ -16,6 +21,7 @@
 		38E425F41FF2FB54009AD50E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425F31FF2FB54009AD50E /* main.m */; };
 		38E425FE1FF2FB54009AD50E /* AjaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E425FD1FF2FB54009AD50E /* AjaxTests.m */; };
 		38E426091FF2FB54009AD50E /* AjaxUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E426081FF2FB54009AD50E /* AjaxUITests.m */; };
+		38EC59811FF8639A0051C19F /* KDVApplicationDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38EC59801FF863520051C19F /* KDVApplicationDataTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVAbstractDataController.m; sourceTree = "<group>"; };
+		3801E5B21FF832CD00646B0F /* KDVAbstractDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVAbstractDataController.h; sourceTree = "<group>"; };
+		3801E5B41FF832CD00646B0F /* KDVApplicationDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVApplicationDataController.h; sourceTree = "<group>"; };
+		3801E5B51FF832CD00646B0F /* KDVApplicationDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVApplicationDataController.m; sourceTree = "<group>"; };
+		380663EC1FF330450058AE61 /* KDVAbstractDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVAbstractDataTests.m; sourceTree = "<group>"; };
+		385C4C761FF4815500028BFD /* Ajax.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ajax.xcdatamodel; sourceTree = "<group>"; };
 		38E425DE1FF2FB54009AD50E /* Ajax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ajax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E425E11FF2FB54009AD50E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38E425E21FF2FB54009AD50E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 		38E426041FF2FB54009AD50E /* AjaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AjaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E426081FF2FB54009AD50E /* AjaxUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AjaxUITests.m; sourceTree = "<group>"; };
 		38E4260A1FF2FB54009AD50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38EC59801FF863520051C19F /* KDVApplicationDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVApplicationDataTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3801E5A91FF8310800646B0F /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5B01FF832CD00646B0F /* Abstract */,
+				3801E5B31FF832CD00646B0F /* Application */,
+			);
+			path = DataControllers;
+			sourceTree = "<group>";
+		};
+		3801E5B01FF832CD00646B0F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5B21FF832CD00646B0F /* KDVAbstractDataController.h */,
+				3801E5B11FF832CD00646B0F /* KDVAbstractDataController.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		3801E5B31FF832CD00646B0F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5B41FF832CD00646B0F /* KDVApplicationDataController.h */,
+				3801E5B51FF832CD00646B0F /* KDVApplicationDataController.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		380663EB1FF330070058AE61 /* AbstractTests */ = {
+			isa = PBXGroup;
+			children = (
+				380663EC1FF330450058AE61 /* KDVAbstractDataTests.m */,
+			);
+			path = AbstractTests;
+			sourceTree = "<group>";
+		};
+		385C4C741FF4815500028BFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		385C4C781FF4818300028BFD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3801E5A91FF8310800646B0F /* DataControllers */,
+				385C4C741FF4815500028BFD /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		38E425D51FF2FB53009AD50E = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +169,7 @@
 		38E425E01FF2FB54009AD50E /* Ajax */ = {
 			isa = PBXGroup;
 			children = (
+				385C4C781FF4818300028BFD /* Data */,
 				38E426181FF2FEB6009AD50E /* ViewControllers */,
 				38E426161FF2FBD9009AD50E /* GUI */,
 				38E426171FF2FD12009AD50E /* ApplicationSupport */,
@@ -117,6 +183,8 @@
 			children = (
 				38E425FD1FF2FB54009AD50E /* AjaxTests.m */,
 				38E425FF1FF2FB54009AD50E /* Info.plist */,
+				38EC597F1FF863520051C19F /* ApplictionDataTests */,
+				380663EB1FF330070058AE61 /* AbstractTests */,
 			);
 			path = AjaxTests;
 			sourceTree = "<group>";
@@ -175,6 +243,14 @@
 				38E425E51FF2FB54009AD50E /* KDVPrimeTVController.m */,
 			);
 			path = PrimeTVController;
+			sourceTree = "<group>";
+		};
+		38EC597F1FF863520051C19F /* ApplictionDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				38EC59801FF863520051C19F /* KDVApplicationDataTests.m */,
+			);
+			path = ApplictionDataTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +390,9 @@
 				38E425E61FF2FB54009AD50E /* KDVPrimeTVController.m in Sources */,
 				38E425E31FF2FB54009AD50E /* AppDelegate.m in Sources */,
 				38E425F41FF2FB54009AD50E /* main.m in Sources */,
+				3845CBB91FF8351E00F12B1D /* KDVAbstractDataController.m in Sources */,
+				3845CBBB1FF835A800F12B1D /* Ajax.xcdatamodeld in Sources */,
+				3845CBB81FF8351800F12B1D /* KDVApplicationDataController.m in Sources */,
 				38E425E91FF2FB54009AD50E /* KDVGraphicsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				38E425FE1FF2FB54009AD50E /* AjaxTests.m in Sources */,
+				3845CBBA1FF8354600F12B1D /* Ajax.xcdatamodeld in Sources */,
+				38EC59811FF8639A0051C19F /* KDVApplicationDataTests.m in Sources */,
+				380663ED1FF330450058AE61 /* KDVAbstractDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ75G5YK98;
 				INFOPLIST_FILE = Ajax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k3nv.Ajax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,6 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQ75G5YK98;
 				INFOPLIST_FILE = Ajax/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.k3nv.Ajax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -599,6 +683,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		385C4C751FF4815500028BFD /* Ajax.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				385C4C761FF4815500028BFD /* Ajax.xcdatamodel */,
+			);
+			currentVersion = 385C4C761FF4815500028BFD /* Ajax.xcdatamodel */;
+			path = Ajax.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 38E425D61FF2FB53009AD50E /* Project object */;
 }
