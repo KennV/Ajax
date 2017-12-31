@@ -8,13 +8,21 @@
 
 #import "AppDelegate.h"
 #import "KDVGraphicsViewController.h"
+#import "KDVAjaxDataController.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
-
+@property (strong, nonatomic)KDVAjaxDataController * ADC;
 @end
 
 @implementation AppDelegate
+@synthesize ADC = _ADC;
 
+- (KDVAjaxDataController *)ADC {
+  if (!_ADC) {
+    _ADC = [[KDVAjaxDataController alloc]initAllUp];
+  }
+  return _ADC;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
