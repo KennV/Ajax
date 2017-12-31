@@ -78,12 +78,12 @@ Hmm, to test the Abstract controller I don't need anything hella special but to 
 - (void)testZero {
   [self setSUT:nil];
   XCTAssertNil([self SUT]);
-  KDVAbstractDataController * bitch = [[KDVAbstractDataController alloc]init];
-  XCTAssertNotNil([bitch MOM]);
-  XCTAssertNotNil([bitch MOC]);
-  XCTAssertNotNil([bitch PCONT]);
-  XCTAssertNotNil([bitch fetchCon]);
-  XCTAssertTrue([bitch copyDatabaseIfNotPresent]);
+  KDVAbstractDataController * testCon = [[KDVAbstractDataController alloc]init];
+  XCTAssertNotNil([testCon MOM]);
+  XCTAssertNotNil([testCon MOC]);
+  XCTAssertNotNil([testCon PCONT]);
+  XCTAssertNotNil([testCon fetchCon]);
+  XCTAssertTrue([testCon copyDatabaseIfNotPresent]);
   
 }
 
