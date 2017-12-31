@@ -19,8 +19,7 @@ Doing this from a touch file
 @implementation KDVApplicationDataTests
 @synthesize memCoord = _memCoord;
 
-- (void)setupInMemPSK
-{
+- (void)setupInMemPSK {
   //https://stackoverflow.com/questions/43625748/unit-testing-with-core-data-in-objective-c
   //xcdatamodel
   NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Ajax" withExtension:@"momd"];
@@ -48,6 +47,13 @@ Doing this from a touch file
   [self setMemCoord:(nil)];
   KDVApplicationDataController *adc = [[KDVApplicationDataController alloc]initAllUp];
   XCTAssertNotNil(adc);
+  XCTAssertNotNil([adc MOM]);
+  XCTAssertNotNil([adc PSK]);
+  XCTAssertNotNil([adc PCONT]);
+  XCTAssertNotNil([adc MOC]);
+  XCTAssertNotNil([adc fetchCon]);
+  // (([adc fetchCon]) != nil) failed: throwing "executeFetchRequest:error: A fetch request must have an entity." - - I simply had not made one in the MOM {yet}
+  XCTAssertTrue([adc copyDatabaseIfNotPresent]);
 }
 
 @end
