@@ -53,6 +53,7 @@ Hmm, to test the Abstract controller I don't need anything hella special but to 
   _ctx.persistentStoreCoordinator = _psk;
   [self setJivePSK:(_psk)];
 }
+
 - (void)setUp {
   [super setUp];
   [self setupInMemPSK];
