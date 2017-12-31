@@ -53,6 +53,7 @@ Hmm, to test the Abstract controller I don't need anything hella special but to 
   _ctx.persistentStoreCoordinator = _psk;
   [self setJivePSK:(_psk)];
 }
+
 - (void)setUp {
   [super setUp];
   [self setupInMemPSK];
@@ -68,11 +69,23 @@ Hmm, to test the Abstract controller I don't need anything hella special but to 
 
 - (void)testADC {
   XCTAssert([[self SUT]isMemberOfClass:[KDVAbstractDataController class]]);
+  XCTAssertNotNil([[self SUT]applicationName]);
   XCTAssert([[[self SUT]applicationName]isEqualToString:@"Ajax"]);
   XCTAssert([[[self SUT]databaseName]isEqualToString:@"Ajax.sqlite"]);
   
 }
 
+- (void)testZero {
+  [self setSUT:nil];
+  XCTAssertNil([self SUT]);
+  KDVAbstractDataController * bitch = [[KDVAbstractDataController alloc]init];
+  XCTAssertNotNil([bitch MOM]);
+  XCTAssertNotNil([bitch MOC]);
+  XCTAssertNotNil([bitch PCONT]);
+  XCTAssertNotNil([bitch fetchCon]);
+  XCTAssertTrue([bitch copyDatabaseIfNotPresent]);
+  
+}
 
 - (void)testOne {
   XCTAssertNotNil([self SUT]);
