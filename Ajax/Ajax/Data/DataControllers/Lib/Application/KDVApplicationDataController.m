@@ -132,11 +132,6 @@
 }
 
 #pragma mark - utilities
-// Creates a new entity of the default type and adds it to the managed object context
-- (NSManagedObject *)createEntity
-{
-  return [NSEntityDescription insertNewObjectForEntityForName:self.entityClassName inManagedObjectContext:[self MOC]];
-}
 // Delete the specified entity
 - (void)deleteEntity:(NSManagedObject *)e  {
   [[self MOC] deleteObject:e];

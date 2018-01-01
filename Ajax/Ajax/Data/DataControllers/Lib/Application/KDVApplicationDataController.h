@@ -27,6 +27,6 @@
                        sortedBy:(NSSortDescriptor *)sortDescriptor
         matchingPredicateString:(NSString *)predicateString, ...;
 
-- (NSManagedObject *)createEntity;
+
 - (void)deleteEntity:(NSManagedObject *)e; 
 @end
