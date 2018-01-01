@@ -1,5 +1,27 @@
 # Ajax #
 
+## Tests are Imperative ##
+
+At least three times in the early life of this project I have found myself ahead of the test. __This is Aweosme!__ because I can space my classes and structure the architecture of the app out and test it without really breaking the base classes. and if that time does arise I can do it in an extension or a protocol. So getting high coverage on Abstract and Application Data Controllers lets me confidently press on to first writing getters and predicates for the AjaxEntity but also test these. {Also note the test rigs arent even rea;;y using a SUT} Intuitavely it feels like the right path
+
+## The Three Things I _Really_ Like about Cocoa ##
+
+Now I have not one bad thing to say about Swift, Hell I really like it. However I keep chasing a new spec around while the other spec is changing too. I just imported some code from at least five years ago into a Obj-C framework and it worked. And I make _that_ distinction because I have every reason to beleive that it will continue to work
+
+__ *Three things I love about Cocoa* __
+Backwards Compatibility
+In Swift I am sort of pulled into having to do it with the Newest Xcode and the Newest IOS version. Now that is noramlly not a big case, but for a Library type extension it is a question I would rather defer. Actually I just tweaked the build scheme and I am able to run it on IOS 10 versus 11.x for swift. And if I used the old-AF manual container I could run as low as say IOS 9.
+
+Consistancy of tests and data / methodology
+As I can run this on a lower OS I would have been stable if I had kept to my non-containerized Old CoreData Tool. My tests would all still be valid and I would be much further along. See - As to be expected as Swift changes I have to change my implementation. Ususally not terribly but it does have an impact and a takeaway value from the time that I am actually working code versus chasing a patch trail to hell.
+
+Really nice square braces both for accessors and functions. I mean it. I have nothing against Java, but with the square braces I feel a higher level of confidence in the scope of this variable. And that isn't the only reason. The IDE, well any capable text editor will match the trailing square to the leading one and it is relably obvious what it says. I mean some things, like accessors should be a matter of faith but even then wrap it as a message
+for example
+[[tOne databaseName]isEqualToString:(@"Ajax.sqlite")]
+is fairly easy to parse, and a lot less error prone it it is defined elsewhere. Regardless it is the way that ~90% of the code in this unit is written until I can be provided a better rationale
+
+Also of note CCC Commits are Code Cleanup Tags. I change the documentation fairly readily. Back to _Tests_
+
 ## Before We Get Into Test Cases ##
 
 There Are at Least Three things that I prefer about Cocoa over Swift. 
