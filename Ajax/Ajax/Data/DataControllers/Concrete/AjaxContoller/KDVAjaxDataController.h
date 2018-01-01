@@ -14,19 +14,5 @@ I might
 
 @interface KDVAjaxDataController : KDVApplicationDataController
 
-- (NSMutableArray *)getEntities:(NSString *)entityName sortedBy:(NSSortDescriptor *)sortDescriptor matchingPredicate:(NSPredicate *)predicate;
-
-- (NSMutableArray *)getAllEntities;
-
-- (NSMutableArray *)getEntitiesMatchingPredicate: (NSPredicate *)p;
-
-- (NSMutableArray *)getEntitiesMatchingPredicateString: (NSString *)predicateString, ...;
-
-- (NSMutableArray *)getEntities:(NSString *)entityName
-                       sortedBy:(NSSortDescriptor *)sortDescriptor
-        matchingPredicateString:(NSString *)predicateString, ...;
-
-- (NSManagedObject *)createEntity;
-- (void)deleteEntity:(NSManagedObject *)e; 
 @end
 
