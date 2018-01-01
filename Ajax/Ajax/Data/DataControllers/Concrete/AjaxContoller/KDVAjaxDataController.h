@@ -14,5 +14,9 @@ I might
 
 @interface KDVAjaxDataController : KDVApplicationDataController
 
+- (id)createEntity;
+- (int)makeRandomNumber:(int)range;
+- (int)makeRandomNumberCurve:(int)rolls :(int)range;
+
 @end
 

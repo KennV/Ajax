@@ -11,7 +11,7 @@
 
 @interface KDVApplicationDataController : KDVAbstractDataController <NSFetchedResultsControllerDelegate>
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchCon;
+@property (strong, nonatomic) NSFetchedResultsController <KDVApplicationEntity *> *fetchCon;
 - (instancetype)initAllUp;
 
 

@@ -32,7 +32,18 @@
   XCTAssert([[tOne databaseName]isEqualToString:(@"Ajax.sqlite")]);
   XCTAssertTrue([[tOne entityClassName]isEqualToString:@"KDVAjaxEntity"]);
   XCTAssertNotNil([tOne MOM]);
-
+  KDVAjaxEntity *j = [tOne createEntity];
+  XCTAssertNotNil(j);
+  XCTAssertNotNil(j.graphics);
+  XCTAssertNotNil(j.physics);
+  XCTAssertNotNil(j.location);
+/**
+ Ok this is a great failure point;
+ It tells me what is not initialized and fairly easily how and where to fix it
+*/
+  
+//  XCTAssert([j isMemberOfClass:([KDVAjaxEntity class])]);
+  //(([j isMemberOfClass:([KDVAjaxEntity class])]) is true) failed
 }
 
 @end
